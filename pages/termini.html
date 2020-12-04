@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakazivanje termina</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo.png" alt="sixpackgym-logo" /></a>
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Početna</a></li>
+            <li><a href="../o-nama.html">O nama</a></li>
+            <li><a href="#" class="active">Termini</a></li>
+            <li><a href="program.html">Program</a></li>
+        </ul>
+        <a href="#" class="icon" onclick="myFunction()">&#x2630;</a>
+    </nav>
+
+    <div class="pageTermini">
+        <section class="form">
+            <div id="div1">
+                <div class="inputSpace">
+                    <div class="hidden changeUser">
+                        <button class="changeUser">Novi korisnik</button>
+                    </div>
+
+                    <label for="username">Unesite vaše korisnicko ime</label>
+                    <input type="text" id="username" name="username">
+
+                    <!-- ovaj pristupni kod ima samo 6 cifara -->
+                    <label for="accessCode">Unesite pristupni kod</label>
+                    <input type="text" id="accessCode" name="accessCode" maxlength="6">
+
+
+                    <button class="next next1">Dalje</button>
+                </div>
+                <div class="hidden error error1 ">
+                    <!-- hidden -->
+                    Uneseno korisnicko ime i pristupni kod nisu odgovarajuci!
+                </div>
+            </div>
+            <!-- ovaj div treba da bude klase hidden i kad se klikne "dalje" onda se sklanja ta klasa -->
+            <div class="hidden" id="div2">
+                <!-- hidden -->
+                <div class="inputSpace">
+                    <label for="radioinputs">Izaberite tip treninga: </label>
+                    <div id="radioinputs">
+                        <span>
+                            <input type="radio" name="tip" id="grupni" value="grupni">
+                            <label for="grupni">Grupni </label>
+                        </span>
+
+                        <span>
+                            <input type="radio" name="tip" id="individualni" value="individualni">
+                            <label for="individualni">Individualni</label>
+                        </span>
+
+                        <span>
+                            <input type="radio" name="tip" id="vodjeni" value="vodjeni">
+                            <label for="vodjeni">Vodjeni</label>
+                        </span>
+
+                        <span>
+                            <input type="radio" name="tip" id="kardio" value="kardio">
+                            <label for="kardio">Kardio</label>
+                        </span>
+                    </div>
+
+
+                    <button class="next next2">Dalje</button>
+                </div>
+
+                <!-- u slucaju greske -->
+                <div class="hidden error error2 ">
+                    <!-- hidden -->
+                    Morate oznaciti tip treninga koji zakazujete!
+                </div>
+
+            </div>
+
+            <div class="hidden" id="div3">
+                <!-- hidden -->
+                <div class="inputSpace">
+                    <label for="date">Unesite kog dana zelite da zakazete trening</label>
+                    <input type="date" name="date" id="date" value="">
+                    <button class="next next3">Dalje</button>
+                </div>
+
+                <!-- u slucaju greske -->
+                <div class="hidden error error3 ">
+                    <!-- hidden -->
+                    Uneseni datum nije odgovarajuci!
+                </div>
+            </div>
+
+
+
+            <!-- kad se lupi "submit" trebaju da se vrate hidden klase svuda i sve da bude kao na po;etku sem 
+                sem sto ce dole da ima i tabela sa zakazanim terminima -->
+            <div class="submitSpace hidden" id="div4">
+                <!-- hidden -->
+                <button class="submit">Zakažite termin</button>
+
+            </div>
+        </section>
+
+        <section class="hidden success ">
+            <!-- hidden -->
+            <p>Uspesno ste zakazali vas trening</p>
+        </section>
+
+        <!-- sekcija sa tabelom koja se prikazuje tek kad korisnik unese neki termin -->
+        <section class="hidden tableSection">
+            <!-- <table class="table hidden"> -->
+            <table class="table">
+                <h2>Vaši treninzi:</h2>
+                <tr>
+                    <th scope="col">Vrsta treninga</th>
+                    <th scope="col">Datum i vreme</th>
+                    <th scope="col">Izabrani trener</th>
+                </tr>
+                <!-- <tr>
+                    <td scope="col">kardio</td>
+                    <td scope="col">1.12.2020</td>
+                    <td scope="col">Butrus Butrus Gali</td>
+                </tr> -->
+            </table>
+        </section>
+        <!----------------- Footer ----------------->
+        <footer>
+            <div class="footer-container">
+                <div class="col col-flex">
+                    <img class="img-footer" src="../img/logo.png" alt="">
+                </div>
+                <div class="col col-contact col-flex1">
+                    <h2>Kontakt informacije</h2>
+                    <ul class="list-footer">
+                        <li>
+                            <i class="fa fa-map-marker-alt"></i>
+                            <span>Adresa: Bulevar Oslobođenja 293</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone-alt"></i>
+                            <span><a href="tel:+381658478484">065/84-78-484</a></span>
+                        </li>
+                        <li>
+                            <i class="fa fa-clock"></i>
+                            <span>Radno vreme: <span>Ponedeljak - Petak: 07h-22h<br><span style="padding-left: 39%;">Subota - Nedelja:
+                  09h-17h</span></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-flex1">
+                    <h2>Zapratite nas</h2>
+                    <div class="col-flex full">
+                        <a href="https://www.facebook.com/SixpackStudio/" target="_blank"><i
+              class="fab fa-facebook-square icon fa-2x"></i></a>
+                        <a href="https://www.instagram.com/six_pack_studio/" target="_blank"><i
+              class="fab fa-instagram icon fa-2x"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square icon fa-2x"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube-square icon fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!----------------- End of footer ----------------->
+
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1464 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* font-size: 10px; */
+    box-sizing: border-box;
+}
+
+
+/* ---------- Navbar ---------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    background-color: #000;
+    z-index: 11;
+}
+
+.logo img {
+    /* height: 15vh; */
+    cursor: pointer;
+    min-height: 16vh;
+    max-height: 16vh;
+    padding-top: 20%;
+}
+
+.menu {
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.menu li a.active,
+.menu li a:hover {
+    background: blue;
+    color: #fff;
+}
+
+.black {
+    background: rgba(0, 0, 0, .7);
+    transition: 1s all;
+}
+
+
+/* Add a black background color to the top navigation
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+} */
+
+
+/* Style the links inside the navigation bar */
+
+
+/* .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+} */
+
+
+/* Hide the link that should open and close the topnav on small screens */
+
+nav .icon {
+    display: none;
+}
+
+
+/* ---------- End of navbar ---------- */
+
+
+/* ---------- First section ---------- */
+
+.section1 {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    /* padding-left: 10%; */
+    justify-content: center;
+    /* flex-direction: column; */
+    background: url('../img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10%;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 4rem;
+    /* padding-top: 5%; */
+    /* padding-left: 20%; */
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.2);
+}
+
+.btnFirstSection {
+    width: 20%;
+    margin-top: 4%;
+    font-size: 1.7rem;
+    padding: 0.5rem 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(218, 214, 214);
+}
+
+.btnFirstSection:hover {
+    border: 1px solid rgb(90, 90, 90);
+    background-color: rgb(168, 166, 166);
+    box-shadow: 0px 1px 1px 1px rgb(151, 150, 150);
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ---------- End of first section ---------- */
+
+
+/* ---------- Second section ---------- */
+
+.section2 h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 5%;
+    font-family: 'Roboto', sans-serif;
+    /* height: 80vh; */
+}
+
+.container2 {
+    max-width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    /* padding: 0 5%; */
+    /* margin-top: 100px; */
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+
+.card {
+    /* flex: 1; */
+    /* padding: 0 5%; */
+    /* width: 50px; */
+    /* border: 2px solid #000; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: aqua;
+    /* color: #fff; */
+}
+
+.card img {
+    padding: 5%;
+    border-radius: 2rem;
+}
+
+.card h2 {
+    padding: 10% 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ---------- End of second section ---------- */
+
+
+/* ---------- Third section ---------- */
+
+.section3 {
+    height: max-content;
+    background-color: rgba(177, 113, 219, .25);
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 10%;
+    flex-wrap: wrap;
+}
+
+.section3 h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.contact {
+    width: 25%;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    line-height: 1.7rem;
+    font-size: 1.3rem;
+    /* text-indent: 0.7rem; */
+    background-color: transparent;
+}
+
+.input:focus {
+    outline: none;
+    /* background-color: rgb(177, 113, 219); */
+    background: linear-gradient(0deg, rgba(177, 113, 219, .35) 2%, rgba(177, 113, 219, .30) 48%, rgba(177, 113, 219, .25) 100%);
+    border-radius: 5px;
+}
+
+.contact form label {
+    font-size: 1.3rem;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact form textarea {
+    resize: none;
+    background-color: blue;
+    border: none;
+    border-radius: 10px;
+}
+
+.btnContact {
+    margin: auto;
+    margin-top: 5%;
+    padding: 3% 20%;
+    border-radius: 10px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    transition: color 0.3s, background-color 0.3s;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+}
+
+.btnContact:hover {
+    background-color: blue;
+    color: white;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.map h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5%;
+    padding-top: 0;
+}
+
+
+/* ---------- End of third section ---------- */
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    height: max-content;
+}
+
+.footer-container {
+    height: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.col {
+    /* border: 1px solid #000; */
+    width: 25%;
+    height: 50%;
+}
+
+.col-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.img-footer {
+    width: 70%;
+    height: 100%;
+}
+
+.list-footer {
+    width: 67%;
+}
+
+.list-footer li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.list-footer li span {
+    padding-left: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+.list-footer li span a {
+    text-decoration: none;
+    color: #000;
+}
+
+.icon {
+    width: 100%;
+    color: blue;
+    flex-basis: auto;
+}
+
+.full {
+    padding-top: 5%;
+    width: 80%;
+}
+
+.col-contact {
+    flex-grow: 1.5;
+}
+
+.col-flex1 {
+    display: flex;
+    justify-content: center top;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col h2 {
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ---------- End of footer ---------- */
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+/* STILOVI ZA STRANICU <<TERMINI>> */
+
+.pageTermini {
+    height: 100vh;
+    /* height: 100%; */
+    background-image: linear-gradient(rgb(57, 121, 194), rgb(170, 206, 240));
+    background-size: cover;
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* ova klasa je za sve one divove koji se pojavljuju nakon klika dugmica */
+
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* u ovom delu se nalazi stilizacija NAVBARA */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    background-color: #000;
+}
+
+.logo img {
+    /* height: 15vh; */
+    cursor: pointer;
+    min-height: 16vh;
+    max-height: 16vh;
+    padding-top: 20%;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* u ovom delu se nalazi stilizacija dugmica */
+
+.next {
+    border: none;
+    /* max-width: 9rem; */
+    width: 70%;
+    margin: 5% 15%;
+    padding: 0.4rem 0;
+    border: 1px solid rgb(29, 69, 143);
+    border-radius: 6px;
+    background-color: rgb(50, 94, 177);
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.next:hover {
+    color: white;
+    border: 1px solid rgb(16, 48, 105);
+    background-color: rgb(34, 75, 151);
+    box-shadow: 0px 1px 1px 1px rgb(22, 62, 131);
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
+.submit {
+    border: none;
+    width: 25%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: 1px solid rgb(78, 156, 58);
+    border-radius: 6px;
+    background-color: rgb(54, 112, 39);
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.submit:hover {
+    color: white;
+    border: 1px solid rgb(33, 83, 20);
+    background-color: rgb(50, 134, 29);
+    box-shadow: 0px 1px 1px 1px rgb(47, 116, 30);
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
+.changeUser button {
+    border: none;
+    width: 70%;
+    margin: 5% 15%;
+    padding: 0.4rem 0;
+    border: 1px solid rgb(116, 96, 31);
+    border-radius: 6px;
+    background-color: rgb(182, 157, 77);
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.changeUser button:hover {
+    color: white;
+    border: 1px solid rgb(87, 70, 16);
+    background-color: rgb(136, 116, 49);
+    box-shadow: 0px 1px 1px 1px rgb(131, 112, 50);
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* ovaj deo se odnosi na prostor oko pola za unos */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    height: min-content;
+}
+
+.form #div1,
+#div2,
+#div3,
+#div4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inputSpace {
+    width: 30%;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* ovaj deo se odnosi na to kako ce izgledati poruke kad je nesto uspesno i kad neje */
+
+.form div .error {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.7rem;
+    width: 100vw;
+    padding: 2.5% 0;
+    margin: 2% 0;
+    background-color: rgb(240, 157, 157);
+    color: rgb(136, 7, 7);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.success {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    padding: 1.5% 0;
+    margin-bottom: 1.5%;
+    background-color: rgb(152, 238, 166);
+    color: rgb(7, 136, 2);
+    border-radius: 1rem;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* stil za prostor gde je dugme ZAKAZI*/
+
+.submitSpace {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3% 0;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* konkretni stilovi za label i za input */
+
+label {
+    /* padding-bottom: 5%; */
+    font-size: 1.7rem;
+}
+
+input {
+    margin-bottom: 2.5%;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+    /* margin-bottom: 15px; */
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+.form #div2 .inputSpace #radioinputs {
+    display: flex;
+    flex-direction: row;
+    /* mozda ove ne treba ovako .... */
+    margin-left: -10%;
+    padding-top: 3%;
+    width: 120%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+
+/* stilizujemo innptu za accessCode */
+
+#accessCode {
+    padding: 0.4rem 0;
+    letter-spacing: 2rem;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+input[type="date"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    /* margin-bottom: 5%; */
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* sredjivanje tabele */
+
+.tableSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding-bottom: 10%;
+}
+
+.tableSection h2 {
+    letter-spacing: 0.2rem;
+    font-size: 2.5rem;
+    color: rgb(51, 91, 165);
+}
+
+.table tr th {
+    width: 20%;
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+
+.table tr td {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgb(161, 185, 228);
+    border: 1.5px solid rgb(80, 129, 221);
+    border-radius: 25px;
+    font-size: 1.7rem;
+}
+
+.table tr td:first-child {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+/*============================================================================================================================================================ */
+/* ===================================================================== POCETAK CSS-A ZA O NAMA =============================================== */
+/* ============================================================================================================================================================ */
+/* -------------- O Nama ------------------- */
+/* ----------- Div 1 ---------------*/
+.div1onama{
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: linear-gradient(37deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    height: auto;
+    
+    /* Podeljena prva sekcija i boja pozadine */
+}
+.div1onama h1{
+    margin: 0;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 0;
+}
+
+
+.container1onama{
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 0;
+    flex-wrap: wrap;
+    margin-top: 0;
+    max-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+.container11onama{
+    width:40%;
+    height: 100%;
+}
+.container12onama img{
+  width: 15rem;
+  height: 15rem;
+  padding-bottom: 8%;
+}
+#h21Div1onama{
+    padding-top:4% ;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 0%;
+}
+#p1Div1onama{
+    
+    font-size: 21px;
+    color: white;
+    width: 45vw;
+    margin-top:0px;
+    padding-bottom: 8%;
+}
+/* Div 2 */
+.div2onama{
+    background-image: linear-gradient(294deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    margin: 0;
+    margin-top: 0;
+    /* height: 370px; */
+    height: auto;
+}
+
+
+.container2onama{
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    margin-top: 0;
+    flex-wrap: wrap-reverse;
+
+}
+#h21Div2onama{
+    margin-top:0 ;
+    margin-bottom: 4%;
+    margin-left: 20%;
+    font-size: 32px;
+    color: white;
+    padding-top: 15%;
+}  
+.container2onama img{
+    position: static;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 20px;   
+}
+#p1Div2onama{
+    margin-top:0 ;
+    margin-left: 20%;
+    font-size: 21px;
+    width: 45vw;
+    color: white;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+/* Div 3 */
+.div3onama{
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: linear-gradient(37deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    height: auto;
+}
+
+.container3onama {
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    margin-top: 0;
+    flex-wrap: wrap;
+    
+}
+.container3onama img{
+    width: 15rem;
+    height: 15rem;
+   
+}
+#h21Div3onama{
+    margin-top: 0; 
+    font-size: 32px;
+    color: white;
+    padding-top: 7%;   
+}
+#p1Div3onama{
+    font-size: 21px;
+    color: white;
+    width: 45vw;
+    margin-bottom: 0;
+    padding-bottom: 10%;
+}
+/* Div 4 */
+.div4onama{
+    margin-top: 0;
+    height: auto;
+    background-image:linear-gradient(to bottom, rgba(36,185,240,1) 80%, rgba(255,255,255,1) 100%);
+    
+    
+}
+#h21Div4onama{
+    text-align: center;
+    font-size: 38px;
+    margin-top: 0;
+    color: white;
+    margin-bottom: 3%;
+}
+
+/* ============================================================================================================================================================ */
+/* ===================================================================== KRAJ CSS-A ZA O NAMA =============================================== */
+/* ============================================================================================================================================================ */
+
+
+/* ----------------------------------------- */
+
+/* ===========================================================================================================
+=========================== CSS ZA PROGRAM =================================================================
+======================================================================================================= */
+
+.program-body {
+    background: #1789FC;
+    background-image: url("../img/background-program.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.program {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.3rem;
+    font-size: 3rem;
+    /* padding-bottom: 10vh; */
+    padding-top: 5vh;
+}
+.container-program {
+    background: #296EB4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 5% 15%;
+    /* border: 1px solid #000; */
+    border-radius: 10px;
+}
+.container-program img {
+    width: 30%;
+    margin: 2% 0;
+    /* border-radius: 20px; */
+}
+.desc {
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 60%;
+}
+.desc h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 0.3rem  ;
+}
+.desc p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    padding: 6% 0;
+    color: #fff;
+}
+.desc button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1.5% 4%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #FDB833;
+    /* transform: scale(1.2); */
+}
+.desc button:hover {
+    background: #FFD07B;
+    border: 1px solid #000;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+.desc button a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* ===============================================================================================
+======================== KRAJ CSS-a ZA PROGRAM ====================================================
+=============================================================================================== */
+
+
+/* Media query ---- RESPONZIVNOST */
+
+
+/* Small devices (phones, 600px and below) */
+
+@media only screen and (max-width: 600px) {
+    /* vezano za stranicu TERMINI */
+    .submit {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+    .inputSpace {
+        width: 70%;
+    }
+    .form #div2 .inputSpace #radioinputs {
+        flex-direction: column;
+        margin-left: 30%;
+        align-items: flex-start;
+    }
+    .table tr th {
+        padding: 0;
+        font-size: 1.7rem;
+    }
+    /* -------------------------------- */
+    /* hamburger */
+    nav ul.menu {
+        display: none;
+    }
+    nav a.icon {
+        /* float: right; */
+        display: block;
+        justify-self: end;
+        width: 20px;
+        font-size: 3rem;
+        text-decoration: none;
+    }
+    nav.responsive {
+        position: relative;
+        height: 250px;
+    }
+    nav.responsive ul.menu {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    nav.responsive ul.menu li {
+        padding: 5% 0;
+        font-size: 1.5rem;
+    }
+    /* ------------------------- */
+    /* pocetna strana */
+    .section1 {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+    .left {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 10%;
+    }
+    .left .text {
+        font-size: 2rem;
+    }
+    .btnFirstSection {
+        width: 150px;
+    }
+    /* druga sekcija */
+    .container2 {
+        justify-content: center;
+    }
+    .section2 h1 {
+        font-size: 2rem;
+    }
+    .card {
+        margin: 2% 0;
+    }
+    .card h2 {
+        padding: 3% 0;
+    }
+    /* treca sekcija */
+    .container3 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .contact {
+        width: 60%;
+    }
+    .contact form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btnContact {
+        margin-bottom: 10%;
+    }
+    .section3 {
+        height: max-content;
+        padding-bottom: 5%;
+    }
+    .map iframe {
+        width: 90vw;
+    }
+    /* --------------FOOTER------------- */
+    .footer-container {
+        height: max-content;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5% 0;
+    }
+    .col {
+        width: 100%;
+        height: max-content;
+    }
+    /* ovo znaci da ikonica treba da se izgubi */
+    .col-flex img {
+        display: none;
+    }
+    /* ========================================= O Nama =============================================== */
+    /* prva sekcija*/
+    .div1onama{
+        background-image: linear-gradient(135deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+        
+    }
+    .container1onama{
+        flex-direction: column;
+        
+    }
+    .container1onama img{
+        height: 10rem;
+        width: 10rem;
+    }
+    .container11onama{
+        width: 90%;
+    }
+    #h21Div1onama{
+        text-align: center;
+    }
+    #p1Div1onama{
+        padding-top:5%;
+       text-align:justify;
+        font-size: 16px;
+        width: 100%;
+        
+    }
+
+    /* druga sekcija*/
+    .div2onama{
+        background-image: linear-gradient(228deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    }
+
+    .container2onama{
+        flex-direction: column;
+    }
+    .container2onama img{
+        height: 10rem;
+        width: 10rem;   
+    }
+
+    .container22onama{
+        order:2;
+        padding-bottom: 15%;
+    }
+    .container21onama{
+        order:1;
+        width: 90%;
+    }
+    #h21Div2onama{
+        text-align: center;
+        margin-left: 0;
+    }
+    #p1Div2onama{
+        padding-top:5%;
+       text-align:justify;
+        font-size: 16px;
+        width: 100%;
+        margin-left: 0;
+        
+    }
+
+    /* treca sekcija*/
+    .div3onama{
+        background-image: linear-gradient(135deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    }
+    .container3onama{
+        flex-direction: column;
+    }
+    .container3onama img{
+        height: 10rem;
+        width: 10rem;
+    }
+    .container31onama{
+        width: 90%;
+    }
+    #h21Div3onama{
+        text-align: center;
+    }
+    #p1Div3onama{
+        padding-top:5%;
+       text-align:justify;
+        font-size: 16px;
+        width: 100%;
+        
+    }
+    /* ================================================ Kraj za O nama =========================================================== */
+ 
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px)and (max-width: 768px) {
+    /* vezano za stranicu TERMINI */
+    .inputSpace {
+        width: 60%;
+    }
+    /* -------------------------------- */
+    /* hamburger */
+    nav ul.menu {
+        display: none;
+    }
+    nav a.icon {
+        /* float: right; */
+        display: block;
+        justify-self: end;
+        width: 20px;
+        font-size: 3rem;
+        text-decoration: none;
+    }
+    nav.responsive {
+        position: relative;
+        height: 250px;
+    }
+    nav.responsive ul.menu {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    nav.responsive ul.menu li {
+        padding: 5% 0;
+        font-size: 1.5rem;
+    }
+    /* -------------------------------- */
+    /* pocetna strana */
+    .section1 {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+    .left {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 10%;
+    }
+    .left .text {
+        font-size: 2rem;
+    }
+    .btnFirstSection {
+        width: 150px;
+    }
+    /* druga sekcija */
+    .container2 {
+        justify-content: center;
+    }
+    .section2 h1 {
+        font-size: 2rem;
+    }
+    .card {
+        margin: 2% 0;
+    }
+    .card h2 {
+        padding: 3% 0;
+    }
+    /* treca sekcija */
+    .container3 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .contact {
+        width: 80%;
+    }
+    .contact form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btnContact {
+        margin-bottom: 10%;
+    }
+    .section3 {
+        height: max-content;
+        padding-bottom: 5%;
+    }
+
+    
+
+
+    /* ======================================== O Nama ============================================= */
+    
+    /* prva sekcija*/
+    .div1onama{
+        background-image: linear-gradient(135deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    }
+    .container1onama{
+        flex-direction: column;
+
+        
+    }
+    .container1onama img{
+        height: 10rem;
+        width: 10rem;
+    }
+    .container11onama{
+        width: 90%;
+        justify-content: center;
+    }
+    #h21Div1onama{
+        text-align: center;
+    }
+    #p1Div1onama{
+        padding-top:5%;
+       text-align:justify;
+        font-size: 16px;
+        width: 100%;
+        
+    }
+
+    /* druga sekcija*/
+    .div2onama{
+        background-image: linear-gradient(228deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    }
+
+    .container2onama{
+        flex-direction: column;
+    }
+    .container2onama img{
+        height: 10rem;
+        width: 10rem;   
+    }
+
+    .container22onama{
+        order:2;
+        padding-bottom: 15%;
+    }
+    .container21onama{
+        order:1;
+        width: 90%;
+    }
+    #h21Div2onama{
+        text-align: center;
+        margin-left: 0;
+    }
+    #p1Div2onama{
+        padding-top:5%;
+       text-align:justify;
+        font-size: 16px;
+        width: 100%;
+        margin-left: 0;
+        
+    }
+
+    /* treca sekcija*/
+    .div3onama{
+        background-image: linear-gradient(135deg, rgba(36,185,240,1) 0%, rgba(255,255,255,1) 100%);
+    }
+    .container3onama{
+        flex-direction: column;
+    }
+    .container3onama img{
+        height: 10rem;
+        width: 10rem;
+    }
+    .container31onama{
+        width: 90%;
+    }
+    #h21Div3onama{
+        text-align: center;
+    }
+    #p1Div3onama{
+        padding-top:5%;
+       text-align:justify;
+        font-size: 16px;
+        width: 100%;
+        
+    }
+    /* ================================= Kraj za O nama================================= */
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    /* vezano za stranicu TERMINI */
+    .inputSpace {
+        width: 50%;
+    }
+    /* -------------------------------- */
+    /* hamburger */
+    nav ul.menu {
+        display: none;
+    }
+    nav a.icon {
+        /* float: right; */
+        display: block;
+        justify-self: end;
+        width: 20px;
+        font-size: 3rem;
+        text-decoration: none;
+    }
+    nav.responsive {
+        position: relative;
+        height: 250px;
+    }
+    nav.responsive ul.menu {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    nav.responsive ul.menu li {
+        padding: 5% 0;
+        font-size: 1.5rem;
+    }
+    /* ----------------------POCETNA STRANA----------------- */
+    /* druga sekcija */
+    .section2 h1 {
+        font-size: 2.5rem;
+    }
+    .card {
+        flex-direction: row;
+        margin: 2% 1%;
+        width: 90%;
+    }
+    .card:nth-of-type(odd) {
+        flex-direction: row;
+    }
+    .card:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+    .card h2 {
+        padding: 2% 3%;
+    }
+    /* treca sekcija */
+    .container3 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .contact {
+        width: 80%;
+    }
+    .contact form {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact form input {
+        width: 70%;
+    }
+    .btnContact {
+        margin-bottom: 10%;
+    }
+    .section3 {
+        height: max-content;
+        padding-bottom: 5%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) and (max-width: 1550px) {
+    /* vezano za stranicu TERMINI */
+    .inputSpace {
+        width: 40%;
+    }
+    /* ----------------------POCETNA STRANA----------------- */
+    /* druga sekcija */
+    .section2 h1 {
+        font-size: 2.5rem;
+    }
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        flex-direction: row;
+        justify-content: center;
+        margin: 2% 1%;
+        min-width: 60%;
+        width: max-content;
+    }
+    .card:nth-of-type(odd) {
+        flex-direction: row;
+    }
+    .card:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+    .card h2 {
+        padding: 2% 3%;
+    }
+    /* treca sekcija - kontakt */
+    .container3 {
+        justify-content: space-between;
+        padding: 0 3%;
+    }
+}
